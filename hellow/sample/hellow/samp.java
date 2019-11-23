@@ -4,7 +4,9 @@ import java.util.*;
 
 
 public class samp{
+	
 	public static void main(String [] args){
+		int k=2;
 		Map<String,Integer> m=new HashMap<String,Integer>();
 		m.put("", 1);
 		m.put("", 2);
@@ -13,7 +15,7 @@ public class samp{
 		m.put("a", 2);
 		m.put("a", 1);		
 		int count=0;
-		for(Map.Entry x: m.entrySet())
+		for(Map.Entry<String,Integer> x: m.entrySet())
 		{
 			count++;
 			
@@ -21,5 +23,6 @@ public class samp{
 			out.println("key="+x.getKey()+" val="+x.getValue());
 			
 		}
+		System.out.println(k);
 	}
 }
